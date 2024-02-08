@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: seagreen url('../../Assets/arnold2.jpg') no-repeat;
+  background-size: cover;
+  background-position: cover;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  backdrop-filter: blur(30px);
+  margin: 30px 0;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input label {
+  margin-right: 10px;
+}
+
+.input input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.input input:focus::placeholder {
+  opacity: 0.5;
+}
+
+
+
+button {
+  margin-top: 20px; /* Add margin-top to create space between button and select */
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+
+.select-wrapper {
+  margin-top: 20px; /* Add margin-top to create space between button and select */
+  position: relative;
+  width: 100%;
+}
+
+
+.select-wrapper select {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+/* Hide the default arrow */
+.select-wrapper select::-ms-expand {
+  display: none;
+}
+
+.select-wrapper select::-webkit-scrollbar {
+  width: 10px;
+}
+
+.select-wrapper select::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.select-wrapper select::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.result {
+  margin-top: 20px; /* Add margin to separate it from other elements */
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/* ButtonLink.css */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
